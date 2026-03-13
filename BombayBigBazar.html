@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bombay Big Bazzar | Household Essentials in Jogupalya, Halasuru</title>
+  <!-- Browser Tab Logo -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta name="description" content="Bombay Big Bazzar is your neighborhood one-stop store for affordable household essentials, kitchen utilities, décor, and daily home needs in Jogupalya, Halasuru, Bengaluru.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --color-primary: #C62828;
+      --color-primary-dark: #9b1f1f;
+      --color-secondary: #2C2C2C;
+      --color-accent: #FBC02D;
+      --color-bg: #FAFAFA;
+      --color-white: #FFFFFF;
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --radius-card: 10px;
+      --radius-pill: 999px;
+
+      --font-heading: "Poppins", "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-body: "Inter", "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-bg);
+      color: var(--color-secondary);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 56px 0;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      color: var(--color-secondary);
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.35rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555555;
+    }
+
+    /* Buttons */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 1.5rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      font-size: 0.9rem;
+      font-weight: 600;
+      font-family: var(--font-heading);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      box-shadow: 0 8px 18px rgba(198, 40, 40, 0.25);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-primary-dark);
+      box-shadow: 0 10px 24px rgba(198, 40, 40, 0.32);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border-color: var(--color-secondary);
+      color: var(--color-secondary);
+    }
+
+    .btn-outline:hover {
+      background-color: rgba(44, 44, 44, 0.04);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .btn-sm {
+      padding: 0.55rem 1.15rem;
+      font-size: 0.85rem;
+    }
+
+    /* Header & Nav */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: rgba(250, 250, 250, 0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      background: linear-gradient(135deg, #C62828, #FBC02D);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-text span:first-child {
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.03em;
+    }
+
+    .brand-text span:last-child {
+      font-size: 0.75rem;
+      color: #777777;
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding-bottom: 0.1rem;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-primary);
+      transition: width 0.2s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: none;
+    }
+
+    .nav-toggle {
+      display: inline-flex;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.35rem;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 999px;
+      background-color: var(--color-secondary);
+      position: relative;
+    }
+
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 2px;
+      border-radius: 999px;
+      background-color: var(--color-secondary);
+      transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease, bottom 0.2s ease;
+    }
+
+    .nav-toggle span::before {
+      top: -6px;
+    }
+
+    .nav-toggle span::after {
+      bottom: -6px;
+    }
+
+    .nav-toggle.active span {
+      background-color: transparent;
+    }
+
+    .nav-toggle.active span::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .nav-toggle.active span::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+
+    .mobile-menu a {
+      font-size: 0.95rem;
+      padding: 0.25rem 0;
+    }
+
+    /* Hero */
+
+    .hero {
+      padding-top: 18px;
+      padding-bottom: 56px;
+    }
+
+    .hero-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      align-items: flex-start;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background-color: rgba(198, 40, 40, 0.06);
+      color: var(--color-primary);
+      padding: 0.25rem 0.9rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-eyebrow span.dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--color-accent);
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      margin-bottom: 1.2rem;
+      max-width: 540px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.4rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: var(--radius-pill);
+      background-color: var(--color-white);
+      box-shadow: var(--shadow-soft);
+      font-size: 0.8rem;
+      color: #555555;
+    }
+
+    .meta-pill strong {
+      font-weight: 600;
+      color: var(--color-secondary);
+    }
+
+    .meta-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background-color: rgba(251, 192, 45, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      color: var(--color-primary);
+    }
+
+    .hero-image-card {
+      width: 100%;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffffff, #ffe7d0);
+      padding: 1.2rem;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hero-image-main {
+      border-radius: 14px;
+      background: linear-gradient(135deg, #C62828 0%, #FBC02D 70%);
+      height: 150px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-image-main::before,
+    .hero-image-main::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      border: 2px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .hero-image-main::before {
+      width: 200px;
+      height: 200px;
+      top: -50px;
+      right: -30px;
+    }
+
+    .hero-image-main::after {
+      width: 150px;
+      height: 150px;
+      bottom: -40px;
+      left: -10px;
+    }
+
+    .hero-shelves {
+      width: 80%;
+      max-width: 260px;
+      height: 90px;
+      border-radius: 12px;
+      background: rgba(250, 250, 250, 0.15);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: 1fr;
+      gap: 4px;
+    }
+
+    .hero-shelf-item {
+      border-radius: 6px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .hero-badge {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background-color: var(--color-white);
+      border-radius: 999px;
+      padding: 0.4rem 0.8rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-badge span.icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background-color: rgba(198, 40, 40, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      font-size: 0.7rem;
+    }
+
+    .hero-badge span.text-strong {
+      font-weight: 600;
+    }
+
+    .hero-bottom-note {
+      margin-top: 0.85rem;
+      font-size: 0.78rem;
+      color: #777777;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-bottom-note span.tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: var(--radius-pill);
+      background-color: rgba(44, 44, 44, 0.04);
+      font-size: 0.75rem;
+    }
+
+    /* Section headings helpers */
+
+    .section-intro {
+      max-width: 620px;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    /* About */
+
+    .about-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.9rem;
+    }
+
+    .highlight-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-card);
+      padding: 0.9rem 1rem;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+    }
+
+    .highlight-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      background-color: rgba(251, 192, 45, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      flex-shrink: 0;
+    }
+
+    .highlight-card p {
+      font-size: 0.9rem;
+    }
+
+    /* Products / Categories */
+
+    .card-grid-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .category-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-card);
+      padding: 1rem 1rem 1.1rem;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .category-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background-color: rgba(251, 192, 45, 0.16);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      font-size: 1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .category-card h3 {
+      color: var(--color-secondary);
+    }
+
+    .category-card p {
+      font-size: 0.9rem;
+    }
+
+    /* Why Choose Us */
+
+    .card-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .why-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-card);
+      padding: 1rem 1.1rem;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .why-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background-color: rgba(198, 40, 40, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+
+    /* Reviews */
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .review-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-card);
+      padding: 1rem 1.05rem 1.1rem;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+    }
+
+    .review-quote {
+      font-size: 1.6rem;
+      color: rgba(198, 40, 40, 0.5);
+      position: absolute;
+      top: 10px;
+      right: 16px;
+    }
+
+    .review-text {
+      font-size: 0.92rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .review-name {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #777777;
+    }
+
+    .reviews-summary {
+      margin-top: 1rem;
+      font-size: 0.86rem;
+      color: #666666;
+    }
+
+    /* Store Info */
+
+    .store-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+
+    .store-details-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-card);
+      padding: 1.1rem 1.1rem;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .store-field {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+      font-size: 0.9rem;
+    }
+
+    .store-field-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background-color: rgba(44, 44, 44, 0.04);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      color: var(--color-primary);
+      flex-shrink: 0;
+    }
+
+    .store-field strong {
+      font-weight: 600;
+      color: var(--color-secondary);
+    }
+
+    .store-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.4rem;
+    }
+
+    .store-map {
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      min-height: 260px;
+      background-color: #e5e5e5;
+    }
+
+    .store-map iframe {
+      border: 0;
+      width: 100%;
+      height: 260px;
+    }
+
+    /* CTA Section */
+
+    .cta-section {
+      background: linear-gradient(135deg, rgba(198, 40, 40, 0.06), rgba(251, 192, 45, 0.12));
+      padding: 52px 0;
+    }
+
+    .cta-inner {
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .cta-inner p {
+      margin-top: 0.4rem;
+      margin-bottom: 1.1rem;
+      font-size: 0.96rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+    }
+
+    /* Footer */
+
+    footer {
+      background-color: var(--color-secondary);
+      color: rgba(255, 255, 255, 0.9);
+      padding-top: 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding-bottom: 22px;
+    }
+
+    .footer-logo {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .footer-tagline {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.78);
+      max-width: 260px;
+    }
+
+    .footer-heading {
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.45rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .footer-links a {
+      display: block;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 0.3rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-accent);
+    }
+
+    .footer-contact p {
+      font-size: 0.9rem;
+      margin-bottom: 0.28rem;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .footer-map {
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #3a3a3a;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .footer-map iframe {
+      width: 100%;
+      height: 150px;
+      border: 0;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 10px 0 16px;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.65);
+      text-align: center;
+    }
+
+    /* Media Queries */
+
+    @media (min-width: 640px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+      h2 {
+        font-size: 1.75rem;
+      }
+      .hero {
+        padding-bottom: 72px;
+      }
+      section {
+        padding: 72px 0;
+      }
+      .card-grid-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .card-grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .reviews-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .about-highlights {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .store-grid {
+        flex-direction: row;
+      }
+      .store-details-card,
+      .store-map {
+        flex: 1;
+      }
+      .footer-grid {
+        grid-template-columns: 1.15fr 1fr 1.1fr;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .nav-links {
+        display: flex;
+      }
+      .nav-cta {
+        display: inline-flex;
+      }
+      .nav-toggle {
+        display: none;
+      }
+      .hero-grid {
+        flex-direction: row;
+        align-items: center;
+      }
+      .hero-main {
+        flex: 1.2;
+      }
+      .hero-side {
+        flex: 1;
+      }
+      .card-grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="#top" class="nav-brand">
+          <div class="logo-mark">B</div>
+          <div class="brand-text">
+            <span>Bombay Big Bazzar</span>
+            <span>Household & Variety Store</span>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#why">Why Us</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#visit">Visit Us</a>
+        </div>
+
+        <div class="nav-cta">
+          <a href="tel:9843338940" class="btn btn-sm btn-primary">Call Now</a>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+        </button>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit Us</a>
+        <a href="tel:9843338940" class="btn btn-sm btn-primary" style="width:max-content;">Call Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-main">
+            <div class="hero-eyebrow">
+              <span class="dot"></span>
+              <span>Jogupalya • Halasuru • Bengaluru</span>
+            </div>
+            <h1>Everything Your Home Needs — All in One Place</h1>
+            <p class="hero-subtitle">
+              Affordable household essentials, décor, and daily-use products conveniently available in your neighborhood.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#visit" class="btn btn-primary">Visit Our Store</a>
+              <a href="tel:9843338940" class="btn btn-outline">Call Now</a>
+            </div>
+            <div class="hero-meta">
+              <div class="meta-pill">
+                <div class="meta-icon">📍</div>
+                <span><strong>Address:</strong> 25-42, Jogupalya Rd, Halasuru, Bengaluru</span>
+              </div>
+              <div class="meta-pill">
+                <div class="meta-icon">⭐</div>
+                <span><strong>Rating:</strong> 3.7 / 5 from local shoppers</span>
+              </div>
+              <div class="meta-pill">
+                <div class="meta-icon">🕒</div>
+                <span><strong>Open:</strong> Daily, 10:00 AM – 10:00 PM</span>
+              </div>
+            </div>
+            <div class="hero-bottom-note">
+              <span class="tag">One-stop home store</span>
+              <span>• Trusted by families, students, and working professionals in the neighborhood.</span>
+            </div>
+          </div>
+          <div class="hero-side">
+            <div class="hero-image-card" aria-hidden="true">
+              <div class="hero-image-main">
+                <div class="hero-shelves">
+                  <div class="hero-shelf-item"></div>
+                  <div class="hero-shelf-item"></div>
+                  <div class="hero-shelf-item"></div>
+                  <div class="hero-shelf-item"></div>
+                  <div class="hero-shelf-item"></div>
+                  <div class="hero-shelf-item"></div>
+                  <div class="hero-shelf-item"></div>
+                  <div class="hero-shelf-item"></div>
+                  <div class="hero-shelf-item"></div>
+                  <div class="hero-shelf-item"></div>
+                </div>
+                <div class="hero-badge">
+                  <span class="icon">🏠</span>
+                  <span class="text-strong">Everything for home</span>
+                  <span>under one roof</span>
+                </div>
+              </div>
+              <p style="margin-top:0.7rem; font-size:0.85rem; color:#6b6b6b;">
+                A modern neighborhood variety store for everyday essentials, kitchen utilities, storage, cleaning, and home décor – all in one quick stop.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <div class="section-label">About Bombay Big Bazzar</div>
+            <h2>Your Neighborhood Household Store</h2>
+            <p class="section-intro">
+              Bombay Big Bazzar is a trusted local store in Bengaluru offering a wide range of household essentials and everyday products. From kitchen utilities to home décor and daily-use items, we provide practical solutions for your home at reasonable, budget-friendly prices.
+            </p>
+            <p>
+              Residents in the Jogupalya and Halasuru areas rely on Bombay Big Bazzar for quick and convenient shopping without the need to travel to large malls or supermarkets. Step in, find what you need, and get back to your day in minutes.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">₹</div>
+              <div>
+                <h3>Affordable Pricing</h3>
+                <p>Everyday prices that work for families, students, and working professionals.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🛒</div>
+              <div>
+                <h3>Variety of Products</h3>
+                <p>From cleaning supplies to décor, find almost everything your home needs under one roof.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">📍</div>
+              <div>
+                <h3>Convenient Location</h3>
+                <p>Located in Jogupalya, easily accessible for nearby apartments and offices in Halasuru.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products / Categories Section -->
+    <section id="products">
+      <div class="container">
+        <div class="section-label">Products & Categories</div>
+        <h2>Explore Our Product Range</h2>
+        <p class="section-intro">
+          Browse our most popular household categories and discover how easy it is to find everything in one visit.
+        </p>
+
+        <div class="card-grid-3">
+          <div class="category-card">
+            <div class="category-icon">🏠</div>
+            <h3>Household Essentials</h3>
+            <p>Daily-use home products like buckets, containers, basic tools, and more for everyday living.</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🍳</div>
+            <h3>Kitchen Utilities</h3>
+            <p>Cookware, utensils, storage jars, and kitchen helpers that make daily cooking simpler.</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🖼️</div>
+            <h3>Home Décor Items</h3>
+            <p>Decorative pieces, wall accents, and small décor touches to make your home feel warm and inviting.</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">📦</div>
+            <h3>Storage &amp; Organization</h3>
+            <p>Baskets, boxes, racks, and organizers to keep every room neat and clutter-free.</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🧽</div>
+            <h3>Cleaning Supplies</h3>
+            <p>Mops, brushes, cloths, and cleaning products to keep your home fresh and spotless.</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">📋</div>
+            <h3>Daily Home Needs</h3>
+            <p>Regularly used household items and general supplies you reach for every single day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why">
+      <div class="container">
+        <div class="section-label">Why Shop With Us</div>
+        <h2>Why Customers Love Bombay Big Bazzar</h2>
+        <p class="section-intro">
+          We are more than just a store – we are your everyday home partner, focused on convenience, value, and a smooth shopping experience.
+        </p>
+
+        <div class="card-grid-2">
+          <div class="why-card">
+            <div class="why-icon">🛍️</div>
+            <h3>Wide Product Variety</h3>
+            <p>Find everything you need for your home in one place, from essentials to décor.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">💰</div>
+            <h3>Affordable Prices</h3>
+            <p>Quality products at prices suitable for everyday budgets and family shopping.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">📍</div>
+            <h3>Convenient Location</h3>
+            <p>Located right in your neighborhood, so you don’t have to travel far or wait in long queues.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">⚡</div>
+            <h3>Quick Shopping Experience</h3>
+            <p>Grab what you need quickly without spending hours in large stores.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews">
+      <div class="container">
+        <div class="section-label">Customer Reviews</div>
+        <h2>What Our Customers Say</h2>
+        <p class="section-intro">
+          Real feedback from shoppers who visit us for their everyday home needs.
+        </p>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-quote">“</div>
+            <p class="review-text">
+              Good place with a lot of variety and affordable prices for household essentials. I can usually find what I need in one visit.
+            </p>
+            <div class="review-name">Local Shopper</div>
+          </div>
+          <div class="review-card">
+            <div class="review-quote">“</div>
+            <p class="review-text">
+              Cheap and good quality products. Almost everything needed for home is available here, which makes it very convenient.
+            </p>
+            <div class="review-name">Regular Customer</div>
+          </div>
+          <div class="review-card">
+            <div class="review-quote">“</div>
+            <p class="review-text">
+              Reasonable prices and decent quality items. A handy one-stop shop for day-to-day household stuff.
+            </p>
+            <div class="review-name">Neighborhood Resident</div>
+          </div>
+        </div>
+
+        <p class="reviews-summary">
+          Average Rating: <strong>3.7 / 5</strong> based on local reviews.
+        </p>
+      </div>
+    </section>
+
+    <!-- Store Information Section -->
+    <section id="visit">
+      <div class="container">
+        <div class="section-label">Store Information</div>
+        <h2>Visit Our Store</h2>
+        <p class="section-intro">
+          Drop by on your way home or during the weekend – we are open every day and ready to help you find everything your home needs.
+        </p>
+
+        <div class="store-grid">
+          <div class="store-details-card">
+            <div class="store-field">
+              <div class="store-field-icon">📍</div>
+              <div>
+                <strong>Address</strong><br />
+                25-42, Jogupalya Rd, Halasuru, Udani Layout, Jogupalya,<br />
+                Bengaluru, Karnataka 560008
+              </div>
+            </div>
+            <div class="store-field">
+              <div class="store-field-icon">📞</div>
+              <div>
+                <strong>Phone</strong><br />
+                <a href="tel:9843338940">098433 38940</a>
+              </div>
+            </div>
+            <div class="store-field">
+              <div class="store-field-icon">🕒</div>
+              <div>
+                <strong>Working Hours</strong><br />
+                Open Daily<br />
+                10:00 AM – 10:00 PM
+              </div>
+            </div>
+            <div class="store-field">
+              <div class="store-field-icon">✅</div>
+              <div>
+                <strong>Special Feature</strong><br />
+                In-store pickup available for quick grab-and-go shopping.
+              </div>
+            </div>
+            <div class="store-cta-row">
+              <a href="tel:9843338940" class="btn btn-primary btn-sm">Call Now</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Bombay+Big+Bazzar+Jogupalya+Road+Halasuru+Bengaluru" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                Get Directions
+              </a>
+            </div>
+          </div>
+          <div class="store-map">
+            <!-- Google Maps Embed: you can replace src with your own embed link -->
+            <iframe
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.108347032226!2d77.619!3d12.964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16c7c7667ea1%3A0x0!2sBombay%20Big%20Bazzar!5e0!3m2!1sen!2sin!4v1700000000000">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner">
+          <h2>Stop By and Find Everything Your Home Needs</h2>
+          <p>
+            From kitchen basics to décor and daily essentials, we have it all ready for you in one convenient neighborhood stop.
+          </p>
+          <div class="cta-buttons">
+            <a href="tel:9843338940" class="btn btn-primary">Call Now</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Bombay+Big+Bazzar+Jogupalya+Road+Halasuru+Bengaluru" target="_blank" rel="noopener" class="btn btn-outline">
+              Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Bombay Big Bazzar</div>
+          <div class="footer-tagline">
+            Everything for Your Home, All in One Place. Your trusted neighborhood store for everyday household needs.
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <div class="footer-contact">
+            <p>25-42, Jogupalya Rd, Halasuru, Udani Layout, Jogupalya,<br />Bengaluru, Karnataka 560008</p>
+            <p><a href="tel:9843338940">Phone: 098433 38940</a></p>
+            <p>Open daily • 10:00 AM – 10:00 PM</p>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#why">Why Customers Love Us</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#visit">Visit Us</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Location</div>
+          <div class="footer-map">
+            <iframe
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.108347032226!2d77.619!3d12.964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16c7c7667ea1%3A0x0!2sBombay%20Big%20Bazzar!5e0!3m2!1sen!2sin!4v1700000000000">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Bombay Big Bazzar, Bengaluru. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    navToggle.addEventListener("click", () => {
+      const isOpen = mobileMenu.style.display === "flex";
+      mobileMenu.style.display = isOpen ? "none" : "flex";
+      navToggle.classList.toggle("active", !isOpen);
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.addEventListener("click", (e) => {
+      if (e.target.tagName.toLowerCase() === "a") {
+        mobileMenu.style.display = "none";
+        navToggle.classList.remove("active");
+      }
+    });
+  </script>
+</body>
+</html>
